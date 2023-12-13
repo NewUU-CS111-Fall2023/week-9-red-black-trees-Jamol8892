@@ -1,22 +1,26 @@
-/*
- * Author:
- * Date:
- * Name:
- */
-
 #include <iostream>
-#include "task_1.h"
+#include "task_from1_to4.h"
+
+using namespace std;
 
 int main() {
-    std::cout << "Task 1" << std::endl;
-    // call for task 1
-    std::cout << "Task 2" << std::endl;
-    // call for task 2
-    std::cout << "Task 3" << std::endl;
-    // call for task 3
-    std::cout << "Task 4" << std::endl;
-    // call for task 4
-    std::cout << "Task 5" << std::endl;
-    // call for task 5
+    cout << "Task 1-4:" << endl;
+
+    int n;
+    cin >> n;
+
+    RedBlackTree tree;
+    for (int i = 0; i < n; i++) {
+        int data;
+        cin >> data;
+        tree.insert(data);
+    }
+
+    tree.printTree();
+    cout << endl;
+
+    cout << "Task 5" << endl;
+
+
     return 0;
 }
